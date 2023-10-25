@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contents',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./contents.component.scss']
 })
 export class ContentsComponent {
-  text: string = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt iusto cumque rem, sed, a magni laboriosam sint unde deserunt dolorum sequi. Molestias quia architecto consequuntur iusto porro laborum cupiditate illo?'
+  @Input() public title!: any  
+  @Input() public text!: any
 }
