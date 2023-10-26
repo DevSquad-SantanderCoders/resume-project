@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ContentsComponent {
   @Input() public title!: any  
+  @Input() public subtitle!: any
   @Input() public text!: any
 }
