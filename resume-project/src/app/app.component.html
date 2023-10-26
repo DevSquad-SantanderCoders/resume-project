@@ -1,6 +1,14 @@
+<main class="row">
+    <section class="col-8">
+        <app-contents [title]="title" [text]="text" [subtitle]="subtitle"></app-contents>
+    </section>
 
-<app-contents [title]="title" [text]="text" [subtitle]="subtitle"></app-contents>
+    <aside class="col-4">
+        <app-infos [candidate]="candidate"></app-infos>
 
-<app-infos [candidate]="candidate"></app-infos>
-<app-skill-component [skill]="skillsInfo"></app-skill-component>
+        <div>
+            <app-skill-component [skill]="skillsInfo"></app-skill-component>
+        </div>
 
+    </aside>
+</main>

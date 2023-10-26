@@ -4,11 +4,12 @@ import { InfosComponent } from './components/infos/infos.component';
 import { SkillComponentComponent } from './components/skill-component/skill-component.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { ContentsComponent } from './component/contents/contents.component';
+import { ContentsComponent } from './components/contents/contents.component';
+
 
 @NgModule({
-  declarations: [AppComponent, InfosComponent, SkillComponentComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, ContentsComponent],
+  declarations: [AppComponent, InfosComponent, SkillComponentComponent, ContentsComponent],
+  imports: [BrowserModule, BrowserAnimationsModule],
 
   providers: [],
   bootstrap: [AppComponent],
