@@ -1,0 +1,33 @@
+.progress-bar {
+  font-family:'Helvetica';
+}
+
+.container-bar {
+  width: 50%;
+  background-color: #1b4353;
+  height: 27px;
+  border-radius: 50px;
+}
+
+.skills {
+  text-align: right;
+  border-radius: 10px;
+  padding: 4.7px 1px;
+  color: #1b4353;
+  background-color: #6daedb;
+  animation: slide 1.8s 0.8s forwards;
+}
+
+@keyframes slide {
+  0% {
+    width: 0%;
+    opacity: 0.2;
+    color: transparent;
+  }
+
+  50% {
+    opacity: 0.6;
+    color: transparent;
+  }
+
+}

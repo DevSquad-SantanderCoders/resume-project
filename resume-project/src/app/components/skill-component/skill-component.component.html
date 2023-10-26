@@ -1,0 +1,13 @@
+<div class="progress-bar">
+  <p>{{ skill.nameSkill }}</p>
+  <div class="container-bar">
+    <div
+      class="skills"
+      [ngStyle]="{
+        width: skill.percentage
+      }"
+    >
+      {{ skill.percentage }}
+    </div>
+  </div>
+</div>
