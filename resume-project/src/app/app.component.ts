@@ -8,6 +8,11 @@ import { skillData } from './components/models/skill-data.model';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+
+  title = 'teste';
+  subtitle = '';
+  text = 'teste2';
+
   public candidate: Candidate = {
     name: 'calabreso',
     tel: '44444444',
@@ -18,4 +23,5 @@ export class AppComponent {
     percentage: '85%',
     nameSkill: 'Angular',
   };
+
 }
