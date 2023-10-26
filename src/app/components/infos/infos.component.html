@@ -1,6 +1,10 @@
 <section class="infos-container">
   <figure>
-    <img src="{{ candidate.img }}" />
+    <label for="photo-load">
+      <img class="user-image" id="user-image-id" src="{{ candidate.img }}" />
+    </label>
+    
+    <input type="file" id="photo-load" class="change-photo" (change)="loadPhoto($event)">
   </figure>
   <div class="infos-candidate">
     <h1>{{ candidate.name }}</h1>

@@ -10,3 +10,12 @@
   border-radius: 999px;
   object-fit: cover;
 }
+
+img:hover{
+  cursor: pointer;
+  filter: grayscale(90);
+}
+
+.change-photo{
+  display: none;
+}
