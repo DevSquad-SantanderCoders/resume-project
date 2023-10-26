@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Candidate } from '../models/candidate-data.model';
+import { Candidate } from '../../models/candidate-data.model';
 
 @Component({
   selector: 'app-infos',

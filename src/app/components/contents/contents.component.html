@@ -1,5 +1,4 @@
-<section>
-    <h2 [ngStyle]="{backgroundColor: '#6daedb'}">{{title}}</h2>
-    <h3 *ngIf="subtitle.length > 0">{{subtitle}}</h3>
-    <p>{{text}}</p>
+<section class="content-container">
+    <h3 class="content-subtitle" *ngIf="subtitle.length > 0">{{subtitle}}</h3>
+    <p class="content-description">{{text}}</p>
 </section>

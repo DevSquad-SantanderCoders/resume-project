@@ -1,13 +1,9 @@
-section{
-    width: 42vw;
+.content-container{
+    margin-bottom: 50px;
+    padding-inline: 40px;
 }
 
-h2{
-    width: 180px;
-    text-align: center;
-    font-size: 28px;
-}
-
-p{
-    font-size: 24px;
+.content-description{
+    font-size: 20px;
+    margin-top: 5px;
 }

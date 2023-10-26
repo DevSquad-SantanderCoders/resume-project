@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+.containeir-contents{
+    overflow-y: scroll;
+    height: calc(100vh - 48px);
+}
+
+.title{
+    width: 180px;
+    text-align: center;
+    font-size: 28px;
+    background-color: #6daedb;
+    margin-inline: 40px;
+    
+}
+
+aside{
+    height: calc(100vh - 48px);
+    padding: 20px 0;
+}
