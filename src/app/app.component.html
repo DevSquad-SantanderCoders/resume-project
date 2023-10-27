@@ -36,9 +36,12 @@
         ></app-skill-component>
       </section>
     </aside>
-    <button class="btn-contact" (click)="openDialog()">
-      <span>Get in touch</span>
-    </button>    
+    <div class="button-container">
+      <button class="btn-contact" (click)="openDialog()">
+        <span>Get in touch</span>
+      </button> 
+    </div>
+       
   </div> 
   
 <app-devs-dialog *ngIf="renderCondition" [devsData]="devsData" (ChangeRenderCondition)="changeConditionFalse($event)"></app-devs-dialog>

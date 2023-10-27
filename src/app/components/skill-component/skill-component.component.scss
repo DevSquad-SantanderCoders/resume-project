@@ -1,3 +1,7 @@
+$primary-color: #191C23;
+$secondary-color: #8BC94F;
+$background-color:#F7F7F7;
+
 .progress-bar {
   font-family:'Helvetica';
   width: 100%;
@@ -8,7 +12,7 @@
 
 .container-bar {
   width: 50%;
-  background-color: #1b4353;
+  background-color: $primary-color;
   height: 15px;
   border-radius: 50px;
 }
@@ -17,8 +21,8 @@
   text-align: center;
   border-radius: 50px;
   height: 15px;
-  color: #1b4353;
-  background-color: #6daedb;
+  color: $primary-color;
+  background-color: $secondary-color;
   animation: slide 1.8s 0.8s forwards;
   
 }
