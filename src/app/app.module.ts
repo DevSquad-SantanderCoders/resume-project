@@ -5,10 +5,11 @@ import { SkillComponentComponent } from './components/skill-component/skill-comp
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { ContentsComponent } from './components/contents/contents.component';
+import { ImageEffects } from './directives/imageEffects/imageEffects.directive';
 
 
 @NgModule({
-  declarations: [AppComponent, InfosComponent, SkillComponentComponent, ContentsComponent],
+  declarations: [AppComponent, InfosComponent, SkillComponentComponent, ContentsComponent, ImageEffects],
   imports: [BrowserModule, BrowserAnimationsModule],
 
   providers: [],

@@ -8,14 +8,25 @@
   width: 250px;
   height: 250px;
   border-radius: 999px;
-  object-fit: cover;
+  object-fit: cover;  
 }
 
 img:hover{
-  cursor: pointer;
-  filter: grayscale(90);
+  cursor: pointer;  
 }
 
 .change-photo{
   display: none;
 }
+
+label>p{
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  top: 470px;
+  left: 80vw;
+  font-size: 30px;
+  font-weight: 600;    
+}
+
+
