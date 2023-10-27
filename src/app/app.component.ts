@@ -4,7 +4,7 @@ import { CreateFormComponent } from './components/create-form/create-form.compon
 import { Candidate } from './models/candidate-data.model';
 import { IContent } from './models/content-data.model';
 import { skillData } from './models/skill-data.model';
-import { DevsDialogComponent } from './components/devs-dialog/devs-dialog.component';
+
 
 @Component({
   selector: 'app-root',
@@ -37,9 +37,9 @@ export class AppComponent {
   };
 
   public candidate: Candidate = {
-    name: 'calabreso',
+    name: 'Default User',
     tel: '55999999999',
-    email: 'calabreso@matchupitchu.com',
+    email: 'user@email.com',
     img: '../assets/default-user.png',
   };
   skillsInfo: skillData[] = [
