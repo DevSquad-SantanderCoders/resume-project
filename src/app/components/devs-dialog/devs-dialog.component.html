@@ -1,0 +1,18 @@
+<div class="background-dialog">  
+    <div class="container-dialog p-5 mb-5 rounded">        
+        <div *ngFor="let devData of devsData">
+        <img class="devsImg" src="{{devData.devImg}}" alt="">
+        <p>{{devData.name}}</p>
+        <a target="_blank" href="{{devData.urlLinkedin}}">
+            <img  class="icons" src="../../../assets/icone-linkedin.png" alt="">
+        </a>
+        <a target="_blank" href="{{devData.urlGithub}}">
+            <img  class="icons2"  src="../../../assets/icons-github.png" alt="">
+        </a>
+    </div>     
+     <button (click)="sendConditionFalse()" class="bt-close">
+        <img src="../../../assets/icons8-excluir-30.png">
+     </button>   
+    </div>   
+</div>
+    

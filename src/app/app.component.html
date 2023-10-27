@@ -1,19 +1,47 @@
-<main class="row p-4">
-    <section class="col-8 d-flex flex-column align-items-start containeir-contents">
-        <h2 class="title">Summary</h2>
-        <app-contents class="mb-4" [text]="summary.text" [subtitle]="summary.subtitle"></app-contents>
-        <h2 class="title">Experience</h2>
-        <app-contents [text]="experience.text" [subtitle]="experience.subtitle" *ngFor="let experience of experiences"></app-contents>
-        <h2 class="title">Education</h2>
-        <app-contents [text]="formation.text" [subtitle]="formation.subtitle" *ngFor="let formation of formations"></app-contents>
+<main class="row">
+  <div class="row p-4 container-sections">
+    <section
+      class="col-8 d-flex flex-column align-items-start containeir-contents"
+    >
+      <h2 class="title">Summary</h2>
+      <app-contents
+        class="mb-4"
+        [text]="summary.text"
+        [subtitle]="summary.subtitle"
+      ></app-contents>
+      <h2 class="title">Experience</h2>
+      <app-contents
+        [text]="experience.text"
+        [subtitle]="experience.subtitle"
+        *ngFor="let experience of experiences"
+      ></app-contents>
+      <h2 class="title">Education</h2>
+      <app-contents
+        [text]="formation.text"
+        [subtitle]="formation.subtitle"
+        *ngFor="let formation of formations"
+      ></app-contents>
     </section>
 
-    <aside class="col-4 d-flex flex-column align-items-center border-start justify-content-center">
-        <app-infos [candidate]="candidate"></app-infos>
+    <aside
+      class="col-4 d-flex flex-column align-items-center border-start justify-content-center"
+    >
+      <app-infos [candidate]="candidate"></app-infos>
 
-        <section class="container d-flex flex-column align-items-center">
-            <app-skill-component class="container" [skill]="skill" *ngFor="let skill of skillsInfo"></app-skill-component>
-        </section>
-
+      <section class="container d-flex flex-column align-items-center">
+        <app-skill-component
+          class="container"
+          [skill]="skill"
+          *ngFor="let skill of skillsInfo"
+        ></app-skill-component>
+      </section>
     </aside>
+    <button class="btn-contact" (click)="openDialog()">
+      <span>Get in touch</span>
+    </button>    
+  </div> 
+  
+<app-devs-dialog *ngIf="renderCondition" [devsData]="devsData" (ChangeRenderCondition)="changeConditionFalse($event)"></app-devs-dialog>
 </main>
+<app-footer (SendDevsData)="receiveDevsData($event)"></app-footer>  
+

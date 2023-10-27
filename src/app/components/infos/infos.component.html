@@ -1,15 +1,13 @@
 <section class="infos-container">
   <figure appImageEffects>
     <label for="photo-load">
-      <img class="user-image" id="user-image-id" src="{{ candidate.img }}" /> 
-      <p appParagraphOpacity >Add photo</p>    
-    </label>
-    
-    <input type="file" id="photo-load" class="change-photo" (change)="loadPhoto($event)">    
+      <img class="user-image" id="user-image-id" src="{{ candidate.img }}" />          
+    </label>    
+    <input type="file" id="photo-load" class="change-photo" (change)="loadPhoto($event)">   
   </figure>
   <div class="infos-candidate">
     <h1>{{ candidate.name }}</h1>
-    <p>{{ candidate.tel }}</p>
+    <p>{{ candidate.tel | telefone }}</p>
     <p>{{ candidate.email }}</p>
   </div>
 </section>
