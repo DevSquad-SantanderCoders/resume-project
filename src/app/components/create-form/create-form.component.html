@@ -1,0 +1,50 @@
+<div class="h-100 w-100 d-flex justify-content-center align-items-center">
+  <mat-card class="p-2 card-form w-75">
+    <mat-card-header
+      class="d-flex align-items-center justify-content-between mb-3"
+    >
+      <mat-card-title class="mb-3">Contact Information</mat-card-title>
+      <button
+        mat-flat-button
+        mat-dialog-close
+        color="primary"
+        class="close-dialog"
+      >
+        Close
+      </button>
+    </mat-card-header>
+    <mat-card-content>
+      <form
+        [formGroup]="formContact"
+        class="d-flex flex-column align-items-center gap-3"
+      >
+        <mat-form-field class="input-infos">
+          <mat-label>Enter your email</mat-label>
+          <input matInput formControlName="email" />
+          <mat-error>
+            {{formContact.controls['email'].errors?.['required'] ? 'Required Field 👀' : 'Incorrect email ❌'}}</mat-error
+          >
+        </mat-form-field>
+        <mat-form-field class="input-infos">
+          <mat-label>Describe the subject</mat-label>
+          <textarea matInput formControlName="subject" col="50"></textarea>
+          <mat-error
+            >{{formContact.controls['subject'].errors?.['required'] ? 'Required Field 👀' : ' Enter more than 20 characters ❌'}}</mat-error
+          >
+        </mat-form-field>
+
+        <button
+          mat-flat-button
+          color="primary"
+          [disabled]="formContact.invalid"
+          (click)="setMessage()"
+        >
+          Enviar
+        </button>
+        <span *ngIf="sucess"
+          >Information sent <mat-icon>check_circle</mat-icon>
+        </span>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
