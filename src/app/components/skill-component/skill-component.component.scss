@@ -1,6 +1,4 @@
-$primary-color: #191C23;
-$secondary-color: #8BC94F;
-$background-color:#F7F7F7;
+@import '../../../styles.scss';
 
 .progress-bar {
   font-family:'Helvetica';
@@ -24,7 +22,7 @@ $background-color:#F7F7F7;
   color: $primary-color;
   background-color: $secondary-color;
   animation: slide 1.8s 0.8s forwards;
-  
+
 }
 
 @keyframes slide {

@@ -1,23 +1,21 @@
-$primary-color: #191C23;
-$secondary-color: #8BC94F;
-$background-color:#F7F7F7;
+@import '../../../styles.scss';
 
 .background-dialog{
     width: 100vw;
     height: 130vh;
     position: absolute;
     top: 0;
-    left: 0;   
+    left: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
     z-index: 10;
 }
 
 .container-dialog{
     background-color: white;
-    border-radius: 10px;     
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,8 +23,8 @@ $background-color:#F7F7F7;
     text-align: center;
     font-size: 28px;
     box-shadow: 7px 9px 16px 6px rgba(0, 0, 0, 0.5);
-    position: relative;  
-    top: 500px;    
+    position: relative;
+    top: 500px;
 }
 
 .devsImg{
